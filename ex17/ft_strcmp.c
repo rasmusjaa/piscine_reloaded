@@ -6,7 +6,7 @@
 /*   By: rjaakonm <rjaakonm@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 18:51:55 by rjaakonm          #+#    #+#             */
-/*   Updated: 2019/10/14 18:55:59 by rjaakonm         ###   ########.fr       */
+/*   Updated: 2019/10/14 19:31:07 by rjaakonm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,8 @@ int	ft_strcmp(char *s1, char *s2)
 	i = 0;
 	while (s1[i] || s2[i])
 	{
-		if (s1[i] > s2[i])
-			return (1);
-		if (s1[i] < s2[i])
-			return (-1);
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
 		i++;
 	}
 	return (0);
