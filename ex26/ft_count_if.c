@@ -6,7 +6,7 @@
 /*   By: rjaakonm <rjaakonm@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:05:23 by rjaakonm          #+#    #+#             */
-/*   Updated: 2019/10/15 14:17:38 by rjaakonm         ###   ########.fr       */
+/*   Updated: 2019/10/15 16:30:52 by rjaakonm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_count_if(char **tab, int (*f)(char*))
 
 	count = 0;
 	i = 0;
-	while (*tab[i])
+	while (tab[i])
 	{
 		if (f(tab[i]) == 1)
 			count++;
