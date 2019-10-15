@@ -6,7 +6,7 @@
 /*   By: rjaakonm <rjaakonm@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:26:40 by rjaakonm          #+#    #+#             */
-/*   Updated: 2019/10/15 16:43:21 by rjaakonm         ###   ########.fr       */
+/*   Updated: 2019/10/15 17:20:34 by rjaakonm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	main(int ac, char **av)
 {
-	char	buf[10];
+	char	buf[1];
 	int		fd;
 
 	if (ac == 1)
@@ -29,10 +29,10 @@ int	main(int ac, char **av)
 		return (1);
 	}
 	fd = open(av[1], O_RDONLY);
-	if (fd == -1)
-		return (1);
-	while (read(fd, buf, 10) != 0)
-		write(1, buf, 10);
+	if (fd < -1)
+		return (0);
+	while (read(fd, &buf, 1) != 0)
+		write(1, &buf, 1);
 	close(fd);
 	return (0);
 }
