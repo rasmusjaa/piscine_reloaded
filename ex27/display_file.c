@@ -6,7 +6,7 @@
 /*   By: rjaakonm <rjaakonm@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:26:40 by rjaakonm          #+#    #+#             */
-/*   Updated: 2019/10/15 15:37:55 by rjaakonm         ###   ########.fr       */
+/*   Updated: 2019/10/15 16:43:21 by rjaakonm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int ac, char **av)
 	if (fd == -1)
 		return (1);
 	while (read(fd, buf, 10) != 0)
-		write (1, buf, 10);
-	close (fd);
+		write(1, buf, 10);
+	close(fd);
 	return (0);
 }

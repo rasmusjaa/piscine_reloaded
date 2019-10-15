@@ -6,11 +6,11 @@
 /*   By: rjaakonm <rjaakonm@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 18:39:29 by rjaakonm          #+#    #+#             */
-/*   Updated: 2019/10/14 18:48:46 by rjaakonm         ###   ########.fr       */
+/*   Updated: 2019/10/15 16:45:45 by rjaakonm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int i;
 
