@@ -6,7 +6,7 @@
 /*   By: rjaakonm <rjaakonm@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 19:08:25 by rjaakonm          #+#    #+#             */
-/*   Updated: 2019/10/15 16:59:22 by rjaakonm         ###   ########.fr       */
+/*   Updated: 2019/10/15 18:04:19 by rjaakonm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int		main(int ac, char **av)
 			i++;
 		}
 	}
-	i = 0;
+	i = 1;
 	while (i < ac)
 	{
 		ft_putstr(av[i]);
